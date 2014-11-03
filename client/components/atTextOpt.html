@@ -1,0 +1,17 @@
+<template name="atTextOpt">
+  <div class="ui basic segment atOpt">
+    <div class="ui form">
+      <div class="inline field">
+        <label>
+          {{#if answered}}
+            <i class="large green checked checkbox link icon"></i>
+          {{else}}
+            <i class="large red empty checkbox link icon"></i>
+          {{/if}}
+          {{name}}
+        </label>
+        <input type="text" id="{{name}}">
+      </div>
+    </div>
+  </div>
+</template>

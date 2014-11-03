@@ -71,6 +71,7 @@ css.add '.atDisplay',
   padding: "20px"
   borderRadius: CSSC.p 10
   border: "2px solid #{@theme.primary}"
+  "border-bottom": "8px solid #{@theme.bgRed}"
 
 # Titles
 css.add 'h1',
@@ -113,3 +114,13 @@ css.add 'pre[class*="language-"]',
 css.add '.segment.atOpt',
   margin: 0
   padding: 0
+
+css.add '.segment.atOpt',
+  margin: 0
+  padding: 0
+
+css.add '.segment.atOpt .field',
+  "margin-bottom": '5px'
+
+css.add '.segment.atOpt label',
+  "min-width": '100px'

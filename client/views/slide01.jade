@@ -1,15 +1,19 @@
 template(name='slide01')
   +HeaderFooterLayout size='[undefined, undefined]'
-    +Surface size='[undefined, 100]' target='header'
+    +Surface size='[undefined, 80]' target='header'
       h2 UserAccounts - MIM 2014
     +Surface proportions='[0.6, 0.6]' align='[.35, .35]' origin='[.5, .5]' target='content'
       h1 Appearance Configuration
-      each props
-        +atBooleanOpt
-    +Surface proportions='[0.6, 0.3]' align='[.35, .9]' origin='[.5, .5]' target='content'
+      .ui.left.aligned.secondary.inverted.segment
+        each booleanOpts
+          +atBooleanOpt
+        each textOpts
+          +atTextOpt
+    +Surface proportions='[0.6, 0.35]' align='[.35, .85]' origin='[.5, .5]' target='content'
       +prism language='javascript' class='line-numbers'
         | {{confCode}}
     +Surface proportions='[0.25, 1.0]' align='[.85, .5]' origin='[.5, .5]' class="atDisplay" target='content'
+      +atState
       +atForm
-    +Surface size='[undefined, 70]' target='footer'
+    +Surface size='[undefined, 50]' target='footer'
       p @Splendido

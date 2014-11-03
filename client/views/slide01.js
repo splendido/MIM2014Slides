@@ -11,8 +11,11 @@ var termsOpts = [
 ];
 
 Template.slide01.helpers({
-    props: function(){
+    booleanOpts: function(){
         return appearanceOpts;
+    },
+    textOpts: function(){
+        return termsOpts;
     },
     confCode: function(){
         var text = "//Appearance\nAccountsTemplates.configure({";
@@ -21,7 +24,7 @@ Template.slide01.helpers({
         });
         _.each(termsOpts, function(opt){
             var value = AccountsTemplates.options[opt.name];
-            if (value)
+            if (!!value)
                 text += "\n    " + opt.name + ": " + value;
         });
         text += "\n});";
