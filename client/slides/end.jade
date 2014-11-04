@@ -1,16 +1,23 @@
 template(name='end')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
-      h2 Meetup Famous
-    +Surface size='[undefined, undefined]' target='content'
+      h2 Meteor Day - MIM 2014
+    +Surface proportions='[1.0, .01]' align='[.5, .15]' origin='[.5, .5]' target='content'
       h1 Thank you for your time.
         br
         | Any questions?
-      p Slides are available here:
+      p Packages info available from here:
+        br
+        a(href='https://atmospherejs.com/?q=useraccounts') https://atmospherejs.com/?q=useraccounts
+      p Slides available at:
+        br
+        a(href='https://github.com/splendido/MIM2014Slides') github.com/splendido/MIM2014Slides
+    +Surface proportions='[1.0, .01]' align='[.5, .7]' origin='[.5, .5]' target='content'
+      h2 Slides based on the marvellous work by @PEM--
+        br
+        img.gravatar(src='/gravatar.png')
+      p Original Slides are available here:
         br
         a(href='https://github.com/PEM--/MeetupFamousSlides') github.com/PEM--/MeetupFamousSlides
-      p Sources are available here:
-        br
-        a(href='https://github.com/PEM--/famousbubble') github.com/PEM--/famousbubble
     +Surface size='[undefined, 70]' target='footer'
-      p PEM
+      p @splendido

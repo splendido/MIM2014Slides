@@ -52,7 +52,7 @@ css.add '.slide-cpt',
 css.add '.gravatar',
   borderRadius: CSSC.p 5
   border: "3px solid #{@theme.primary}"
-  width: CSSC.p 20
+  width: CSSC.p 5
 
 # Background and generic values
 css.add 'html',
@@ -63,8 +63,14 @@ css.add 'html',
   #font: "24px sourceSansPro"
 
 
-css.add 'bgRed',
+css.add '.bgRed',
   backgroundColor: @theme.bgRed
+
+css.add '.bgLightGray',
+  "background-color": '#999999'
+
+css.add '.bgDarkGray',
+  "background-color": '#333333'
 
 # atForm window
 css.add '.atDisplay',
