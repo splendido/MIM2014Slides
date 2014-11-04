@@ -68,10 +68,10 @@ css.add 'bgRed',
 
 # atForm window
 css.add '.atDisplay',
+  fontSize: '0.9em'
   padding: "20px"
-  borderRadius: CSSC.p 10
+  borderRadius: CSSC.p 2
   border: "2px solid #{@theme.primary}"
-  "border-bottom": "8px solid #{@theme.bgRed}"
 
 # Titles
 css.add 'h1',
@@ -124,3 +124,7 @@ css.add '.segment.atOpt .field',
 
 css.add '.segment.atOpt label',
   "min-width": '100px'
+
+css.add '.segment.atState .button',
+  fontSize: '.8em'
+  "min-width": '200px'

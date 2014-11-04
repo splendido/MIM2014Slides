@@ -7,19 +7,17 @@ Template.atState.helpers({
         return AccountsTemplates.getState();
     },
     states: function(){
-        var states = _.map(AccountsTemplates.STATES, function(name, id){
+        return _.map(AccountsTemplates.STATES, function(name, id){
             return {
                 _id: id,
                 name: name,
             };
         });
-        console.dir(states);
-        return states;
     },
 });
 
 Template.atState.events({
-    "click .item": function(){
+    "click .item": function(e, t){
         AccountsTemplates.setState(this.name);
     }
 });

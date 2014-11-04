@@ -6,7 +6,6 @@
 meteor-platform
 mjn:famous
 coffeescript
-pierreeric:cssc-colors
 mquandalle:jade
 gadicohen:famous-views
 iron:router
@@ -20,4 +19,5 @@ nooitaf:semantic-ui
 yefim:accounts-linkedin
 kestanous:reactive-objects
 reactive-var
+pierreeric:cssc-colors@0.1.0
 

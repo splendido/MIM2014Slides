@@ -1,0 +1,11 @@
+template(name='slide01')
+  +Surface proportions='[1.0, 0.4]'
+    h1 Appearance Configuration
+    .ui.left.aligned.secondary.inverted.segment
+      each booleanOpts
+        +atBooleanOpt
+      each textOpts
+        +atTextOpt
+  +Surface proportions='[1.0, 0.35]' align='[.0, .9]' origin='[.0, .0]'
+    +prism language='javascript' class='line-numbers'
+      | {{confCode}}
