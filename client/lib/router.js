@@ -77,7 +77,7 @@ Router.setPrev = function() {
 
 Router.setCounter = function() {
   var cpt = FView.byId('slideCpt');
-  if (cpt !== undefined) {
+  if (cpt && cpt.modifier) {
     cpt.modifier.setTransform(famous.core.Transform.rotateY(Math.PI), {
       duration: 300
     });
