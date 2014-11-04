@@ -1,23 +1,29 @@
 template(name='slide13')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
-      h2 Meetup Famous - The finish, the bubbles
-    +Surface size='[900, undefined]' align='[.5, .5]' origin='[.5, .5]' target='content'
-      +prism language='coffeescript' class='line-numbers'
-        |   ...
-        |   addBubble: (i) ->
-        |     bubble = new Bubble()
-        |     (@add bubble.mod).add bubble.shape
-        |     bubble.mod.transformFrom ->
-        |       bubble.body.getTransform()
-        |     @pe.attach @collision, @pe.getBodies(), bubble.body
-        |     @pe.attach [
-        |       @gravity
-        |       @walls.components[0]
-        |       @walls.components[1]
-        |       @walls.components[2]
-        |       @walls.components[3]
-        |     ] , bubble.body
-        |     @pe.addBody bubble.body
+      h2 Meteor Day - MIM 2014
+    +Surface proportions='[1.0, .01]' align='[.5, .15]' origin='[.5, .5]' target='content'
+      h1 A Big Thank You to all contributors:
+      .ui.left.aligned.segment
+        .ui.small.celled.list
+          each contributors
+            .item
+              img.gravatar_small(src='{{avatar_url}}')
+              .content
+                .header {{login}}
+                a(href='{{url}}') {{url}}
     +Surface size='[undefined, 70]' target='footer'
-      p PEM
+      p @splendido
+
+    //
+        .ui.items
+          each contributors
+            .item
+              .image
+                img.gravatar(src='{{avatar_url}}')
+              .content
+                .name
+                  {{login}}
+                a(href='{{url}}') {{url}}
+                .extra
+                  {{contributions}} contributions

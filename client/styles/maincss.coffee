@@ -54,6 +54,11 @@ css.add '.gravatar',
   border: "3px solid #{@theme.primary}"
   width: CSSC.p 5
 
+css.add '.gravatar_small',
+  borderRadius: CSSC.p 5
+  border: "1px solid #{@theme.primary}"
+  width: CSSC.p 2
+
 # Background and generic values
 css.add 'html',
   backgroundImage: "radial-gradient(ellipse at center, \
