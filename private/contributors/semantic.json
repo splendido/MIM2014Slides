@@ -1,0 +1,42 @@
+[
+  {
+    "login": "splendido",
+    "id": 6148980,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6148980?v=2",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/splendido",
+    "html_url": "https://github.com/splendido",
+    "followers_url": "https://api.github.com/users/splendido/followers",
+    "following_url": "https://api.github.com/users/splendido/following{/other_user}",
+    "gists_url": "https://api.github.com/users/splendido/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/splendido/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/splendido/subscriptions",
+    "organizations_url": "https://api.github.com/users/splendido/orgs",
+    "repos_url": "https://api.github.com/users/splendido/repos",
+    "events_url": "https://api.github.com/users/splendido/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/splendido/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 75
+  },
+  {
+    "login": "kevohagan",
+    "id": 2431923,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2431923?v=2",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kevohagan",
+    "html_url": "https://github.com/kevohagan",
+    "followers_url": "https://api.github.com/users/kevohagan/followers",
+    "following_url": "https://api.github.com/users/kevohagan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kevohagan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kevohagan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kevohagan/subscriptions",
+    "organizations_url": "https://api.github.com/users/kevohagan/orgs",
+    "repos_url": "https://api.github.com/users/kevohagan/repos",
+    "events_url": "https://api.github.com/users/kevohagan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kevohagan/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 1
+  }
+]

@@ -2,20 +2,28 @@ template(name='slide13')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
       h2 Meteor Day - MIM 2014
-    +Surface proportions='[1.0, .01]' align='[.5, .15]' origin='[.5, .5]' target='content'
+    +Surface proportions='[0.7, .9]' align='[.5, .4]' origin='[.5, .5]' target='content'
       h1 A Big Thank You to all contributors:
-      .ui.left.aligned.segment
-        .ui.small.celled.list
-          each contributors
-            .item
-              img.gravatar_small(src='{{avatar_url}}')
-              .content
-                .header {{login}}
-                a(href='{{url}}') {{url}}
-    +Surface size='[undefined, 70]' target='footer'
-      p @splendido
-
-    //
+      .ui.center.aligned.five.column.relaxed.grid
+        each contrib_rows
+          .row
+            each contributors
+              .column
+                  .item
+                    img.gravatar_small(src='{{avatar_url}}')
+                    .content
+                      .header
+                        a(href='{{html_url}}') {{login}}
+      //
+        .ui.left.aligned.segment
+          .ui.small.celled.list
+            each contributors
+              .item
+                img.gravatar_small(src='{{avatar_url}}')
+                .content
+                  .header {{login}}
+                  a(href='{{url}}') {{url}}
+      //
         .ui.items
           each contributors
             .item
@@ -27,3 +35,6 @@ template(name='slide13')
                 a(href='{{url}}') {{url}}
                 .extra
                   {{contributions}} contributions
+    +Surface size='[undefined, 70]' target='footer'
+      p @splendido
+

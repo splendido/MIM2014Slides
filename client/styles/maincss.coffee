@@ -57,7 +57,7 @@ css.add '.gravatar',
 css.add '.gravatar_small',
   borderRadius: CSSC.p 5
   border: "1px solid #{@theme.primary}"
-  width: CSSC.p 2
+  width: CSSC.p 50
 
 # Background and generic values
 css.add 'html',
