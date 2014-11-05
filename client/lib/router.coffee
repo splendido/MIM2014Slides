@@ -77,4 +77,5 @@ if Meteor.isClient
           duration: 300
       , 300
 
-  Router.onAfterAction -> Router.setCounter()
+  Router.onAfterAction ->
+    Router.setCounter()
