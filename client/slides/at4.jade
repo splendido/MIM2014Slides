@@ -1,0 +1,80 @@
+template(name='at4')
+  +HeaderFooterLayout size='[undefined, undefined]'
+    +Surface size='[undefined, 100]' target='header'
+      h2 UserAccounts - Frameworks
+    +Surface proportions='[0.45, 0.9]' align='[.02, .0]' origin='[.0, .0]' target='content'
+      .small-code
+        +prism language='spacebars'
+          | &lt;div class="at-form">
+          |   &lt;div class="at-title">&lt;h3>Sign In&lt;/h3>&lt;/div>
+          |   &lt;div class="at-oauth">
+          |     &lt;button class="at-social-btn" id="at-twitter" name="twitter">
+          |     &lt;i class="fa fa-twitter">&lt;/i> Login with Twitter
+          |     &lt;/button>
+          |   &lt;/div>
+          |   &lt;div class="at-sep">&lt;strong>OR&lt;/strong>&lt;/div>
+          |   &lt;div class="at-pwd-form">
+          |     &lt;form role="form" id="at-pwd-form" novalidate="">
+          |       &lt;div class="at-input">
+          |         &lt;label for="at-field-username">Username&lt;/label>
+          |         &lt;input type="text" id="at-field-username" name="at-field-username">
+          |       &lt;/div>
+          |       &lt;div class="at-input">
+          |         &lt;label for="at-field-password">Password&lt;/label>
+          |         &lt;input type="password" id="at-field-password" name="at-field-password">
+          |       &lt;/div>
+          |       &lt;div class="at-pwd-link">
+          |         &lt;p>
+          |           &lt;a href="/forgot-password" id="at-forgotPwd" class="at-link at-pwd">
+          |             Forgot your password?
+          |           &lt;/a>
+          |         &lt;/p>
+          |       &lt;/div>
+          |       &lt;button type="submit" class="at-btn submit" id="at-btn">Sign In&lt;/button>
+          |     &lt;/form>
+          |   &lt;/div>
+          |   &lt;div class="at-signup-link">
+          |     &lt;p>
+          |       Don't have an account?
+          |       &lt;a href="/sign-up" id="at-signUp" class="at-link at-signup">Register&lt;/a>
+          |     &lt;/p>
+          |   &lt;/div>
+          | &lt;/div>
+    +Surface proportions='[0.45, 0.9]' align='[.52, .0]' origin='[.0, .0]' target='content'
+      .ui.piled.feed.segment
+        h2.ui.header
+          | Easy to Customize!
+        .event
+          .label
+            i.circular.pencil.icon
+          .content
+            .summary
+              | ...be it basic or vanilla CSS
+        .event
+          .label
+            i.circular.edit.icon
+          .content
+            .summary
+              | ...be it
+              a(href="http://learnboost.github.io/stylus/") Stylus
+        .event
+          .label
+            i.circular.thumbs.up.outline.icon
+          .content
+            .summary
+              | ...be it also
+              a(href="http://lesscss.org/") LESS
+              | or
+              a(href="http://sass-lang.com/") SASS
+        .event
+          .label
+            i.circular.rocket.icon
+          .content
+            .summary
+              | ...or even pure CoffeeScript if you're looking for performance optimization 
+        p.left
+          | there is always some
+          strong at-class
+          | at the right place!
+    +Surface size='[undefined, 50]' target='footer'
+      p @splendido

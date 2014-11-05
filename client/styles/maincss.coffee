@@ -72,10 +72,12 @@ css.add '.bgRed',
   backgroundColor: @theme.bgRed
 
 css.add '.bgLightGray',
-  "background-color": '#999999'
+  #"background-color": '#999999'
+  "background-color": @theme.bg1
 
 css.add '.bgDarkGray',
-  "background-color": '#333333'
+  #"background-color": '#333333'
+  "background-color": @theme.bg2
 
 # atForm window
 css.add '.atDisplay',
