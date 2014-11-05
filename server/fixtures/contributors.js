@@ -27,7 +27,6 @@ _.each(contribs_files, function(cf){
         var avatar_url = contrib.avatar_url;
         var html_url = contrib.html_url;
         var contributions = contrib.contributions;
-        console.log("Id: " + c_id);
         if (contributors[c_id]){
             if (contributions > contributors[c_id]["contributions"])
                 contributors[c_id]["contributions"] = contributions;

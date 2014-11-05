@@ -1,16 +1,16 @@
 var appearanceOpts = [
-    {_id:1, name: "showAddRemoveServices"},
-    {_id:2, name: "showForgotPasswordLink"},
-    {_id:3, name: "showLabels"},
-    {_id:4, name: "showPlaceholders"},
+    {_id:1, name: "confirmPassword"},
+    {_id:2, name: "enablePasswordChange"},
+    {_id:3, name: "forbidClientAccountCreation"},
+    {_id:4, name: "sendVerificationEmail"},
 ];
 
 var termsOpts = [
-    {_id:1, name: "privacyUrl"},
-    {_id:2, name: "termsUrl"},
+    {_id:1, name: "homeRoutePath"},
+    {_id:2, name: "redirectTimeout"},
 ];
 
-Template.slide01.helpers({
+Template.behaviour.helpers({
     booleanOpts: function(){
         return appearanceOpts;
     },

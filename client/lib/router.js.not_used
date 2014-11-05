@@ -1,18 +1,8 @@
 var SLIDES = [
   {layt: 'layout',  tpl: 'title',   section: 1, path: '/'},
   {layt: 'layout',  tpl: 'slide01', section: 1, path: '/slide01'},
-  {layt: 'layout',  tpl: 'slide02', section: 1, path: '/slide02'},
-  {layt: 'layout',  tpl: 'slide03', section: 1, path: '/slide03'},
-  {layt: 'layout',  tpl: 'slide04', section: 1, path: '/slide04'},
-  {layt: 'layout',  tpl: 'slide05', section: 1, path: '/slide05'},
-  {layt: 'layout',  tpl: 'slide06', section: 1, path: '/slide06'},
-  {layt: 'layout',  tpl: 'slide07', section: 1, path: '/slide07'},
-  {layt: 'layout',  tpl: 'slide08', section: 1, path: '/slide08'},
-  {layt: 'layout',  tpl: 'slide09', section: 1, path: '/slide09'},
-  {layt: 'layout',  tpl: 'slide10', section: 1, path: '/slide10'},
-  {layt: 'layout',  tpl: 'slide11', section: 1, path: '/slide11'},
-  {layt: 'layout',  tpl: 'slide12', section: 1, path: '/slide12'},
-  {layt: 'layout',  tpl: 'slide13', section: 1, path: '/slide13'},
+  {layt: 'layout',  tpl: 'slide02', section: 2, path: '/slide02'},
+  {layt: 'layout',  tpl: 'contribs', section: 3, path: '/contribs'},
   {layt: 'layout',  tpl: 'end',     section: 1, path: '/end'},
 ];
 
@@ -76,8 +66,8 @@ Router.setPrev = function() {
 };
 
 Router.setCounter = function() {
-  var cpt = FView.byId('slideCpt');
-  if (cpt && cpt.modifier) {
+  window.cpt = FView.byId('slideCpt');
+  if (cpt !== void 0) {
     cpt.modifier.setTransform(famous.core.Transform.rotateY(Math.PI), {
       duration: 300
     });

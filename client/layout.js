@@ -8,5 +8,5 @@ Template.layout.helpers({
 });
 
 Template.layout.rendered = function() {
-  return Session.set('currentTransition', 'slideWindow');
+  Session.set('currentTransition', 'slideWindow');
 };

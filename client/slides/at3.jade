@@ -1,0 +1,46 @@
+template(name='at3')
+  +HeaderFooterLayout size='[undefined, undefined]'
+    +Surface size='[undefined, 100]' target='header'
+      h2 UserAccounts - Frameworks
+    +Surface proportions='[0.9, undefined]' align='[.5, .5]' origin='[.5, .5]' target='content'
+      h1 Which front-ends are currently available?
+    +Surface proportions='[0.9, undefined]' align='[.5, .7]' origin='[.5, .5]' target='content'
+      //
+        .ui.horizontal.tiny.list
+          .item
+            img.rouded.ui.medium.disabled.image(src='/imgs/sign-in-bootstrap.png')
+          .item
+            img.rouded.ui.medium.disabled.image(src='/imgs/sign-in-semantic.png')
+          .item
+            img.rouded.ui.medium.disabled.image(src='/imgs/sign-in-foundation.png')
+          .item
+            img.rouded.ui.medium.disabled.image(src='/imgs/sign-in-telescope.png')
+      .ui.four.items
+        .item
+          .image
+            img(src='/imgs/sign-in-bootstrap.png')
+          .content
+            .name Twitter Bootstrap
+            p.description
+              a(href="http://getbootstrap.com/") getbootstrap.com
+        .item
+          .image
+            img(src='/imgs/sign-in-semantic.png')
+          .content
+            .name Semantic-UI
+            p.description
+              a(href="http://semantic-ui.com/") semantic-ui.com
+        .item
+          .image
+            img(src='/imgs/sign-in-foundation.png')
+          .content
+            .name Zurb Foundation
+            p.description
+              a(href="http://foundation.zurb.com/") foundation.zurb.com
+        .item
+          .image
+            img(src='/imgs/sign-in-telescope.png')
+          .content
+            .name Unstyled
+            p.description
+              a(href="http://www.telesc.pe/") telesc.pe
