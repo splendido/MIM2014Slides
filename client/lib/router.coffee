@@ -3,8 +3,10 @@
   {layt: 'layout',  tpl: 'at1',  section: 1, path: '/at1'},
   {layt: 'layout',  tpl: 'at2',  section: 1, path: '/at2'},
   {layt: 'layout',  tpl: 'at3',  section: 1, path: '/at3'},
+  {layt: 'layout',  tpl: 'templates',  section: 2, path: '/templates'},
   {layt: 'layout',  tpl: 'appearance',  section: 2, path: '/appearance'},
   {layt: 'layout',  tpl: 'behaviour',  section: 2, path: '/behaviour'},
+  {layt: 'layout',  tpl: 'texts',  section: 2, path: '/texts'},
   {layt: 'layout',  tpl: 'contribs', section: 3, path: '/contribs'},
   {layt: 'layout',  tpl: 'end',      section: 1, path: '/end'},
 ]
