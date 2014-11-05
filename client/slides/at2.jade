@@ -2,12 +2,29 @@ template(name='at2')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
       h2 UserAccounts - UserAccounts
-    +Surface size='[900, undefined]' align='[.5, .5]' origin='[.5, .5]' target='content'
-      h1 Why?!
-      .ui.left.aligned.bulleted.massive.list
-        .item ...the logic behind the templates never changes
-        .item ...different front-end framework could be used for different applications
-    +Surface size='[900, undefined]' align='[.5, .7]' origin='[.5, .5]' target='content'
+    +Surface proportions='[0.6, 0.4]' align='[.5, .25]' origin='[.5, .5]' target='content'
+      //
+        h1 Why?!
+        .ui.left.aligned.bulleted.massive.list
+          .item ...the logic behind the templates never changes
+          .item ...different front-end framework could be used for different applications
+      .ui.piled.feed.segment
+        h2.ui.header
+          | Why?!
+        .event
+          .label
+            i.huge.settings.icon
+          .content
+            .summary
+              | ...the logic behind the templates never changes
+        .event
+          .label
+            i.huge.dashboard.icon
+          .content
+            .summary
+              | ...different front-end framework could be used for different applications
+
+    +Surface proportions='[0.6, 0.4]' align='[.5, .65]' origin='[.5, .5]' target='content'
       h1 Why the logic should be rewritten everytime some html need be?!?!
     +Surface size='[undefined, 50]' target='footer'
       p @splendido

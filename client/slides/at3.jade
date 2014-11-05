@@ -4,7 +4,7 @@ template(name='at3')
       h2 UserAccounts - Frameworks
     +Surface proportions='[.9, undefined]' align='[.5, .5]' origin='[.5, .5]' target='content'
       h1 Which front-ends are currently available?
-    +Surface proportions='[.9, undefined]' align='[.5, .7]' origin='[.5, .5]' target='content'
+    +Surface proportions='[.9, undefined]' align='[.5, .65]' origin='[.5, .5]' target='content'
       //
         .ui.horizontal.tiny.list
           .item
@@ -20,34 +20,42 @@ template(name='at3')
           .image
             img(src='/imgs/sign-in-bootstrap.png')
           .content
-            .name Twitter Bootstrap
+            .name
+              a(href="http://getbootstrap.com/") Twitter Bootstrap
             p.description
-              a(href="http://getbootstrap.com/") getbootstrap.com
+              | useraccounts:bootstrap
         .item
           .image
             img(src='/imgs/sign-in-semantic.png')
           .content
-            .name Semantic-UI
+            .name
+              a(href="http://semantic-ui.com/") Semantic-UI
             p.description
-              a(href="http://semantic-ui.com/") semantic-ui.com
+              | useraccounts:semantic-ui
         .item
           .image
             img(src='/imgs/sign-in-foundation.png')
           .content
-            .name Zurb Foundation
+            .name
+              a(href="http://foundation.zurb.com/") Zurb Foundation
             p.description
-              a(href="http://foundation.zurb.com/") foundation.zurb.com
+              | useraccounts:foundation
         .item
           .image
             img(src='/imgs/sign-in-telescope.png')
           .content
             .name Unstyled
             p.description
+              | useraccounts:unstyled
+            .extra
+              | see it on
               a(href="http://www.telesc.pe/") telesc.pe
-    +Surface proportions='[.9, .2]' align='[.5, .95]' origin='[.5, .5]' target='content'
+    +Surface proportions='[.9, .2]' align='[.5, .92]' origin='[.5, .5]' target='content'
       h2
         | Plus a 'plugin' package to get template components wrapped for
         a(href="http://famo.us/") Famo.us
         | !
+    +Surface proportions='[.9, .2]' align='[.5, .92]' origin='[.5, .2]' target='content'
+        p useraccounts:famous-wrapper
     +Surface size='[undefined, 50]' target='footer'
       p @splendido
