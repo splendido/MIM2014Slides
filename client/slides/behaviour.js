@@ -1,34 +1,36 @@
-var appearanceOpts = [
-    {_id:1, name: "confirmPassword",             type: "boolean"},
-    {_id:2, name: "enablePasswordChange",        type: "boolean"},
-    {_id:3, name: "forbidClientAccountCreation", type: "boolean"},
-    {_id:4, name: "sendVerificationEmail",       type: "boolean"},
-];
-
-var termsOpts = [
-    {_id:1, name: "homeRoutePath",   type: "str"},
-    {_id:2, name: "redirectTimeout", type: "number"},
+var behaviourOpts = [
+    {_id:1, name: "confirmPassword",             type: "boolean", obj: "options", reinit: true},
+    {_id:2, name: "enablePasswordChange",        type: "boolean", obj: "options", reinit: true},
+    {_id:3, name: "forbidClientAccountCreation", type: "boolean", obj: "options", reinit: true},
+    {_id:4, name: "sendVerificationEmail",       type: "boolean", obj: "options", reinit: true},
+    {_id:5, name: "homeRoutePath",               type: "str",     obj: "options", reinit: true},
+    {_id:6, name: "redirectTimeout",             type: "number",  obj: "options", reinit: true},
 ];
 
 Template.behaviour.helpers({
-    booleanOpts: function(){
-        return appearanceOpts;
+    options: function(){
+        return behaviourOpts;
     },
-    textOpts: function(){
-        return termsOpts;
+    templateName: function(){
+        if (this.type == "boolean")
+            return "atBooleanOpt";
+        return "atTextOpt";
     },
     confCode: function(){
-        var text = "//Behaviour\nAccountsTemplates.configure({";
-        _.each(appearanceOpts, function(opt){
-            text += "\n    " + opt.name + ": " + AccountsTemplates.options[opt.name];
-        });
-        _.each(termsOpts, function(opt){
-            var value = AccountsTemplates.options[opt.name];
-            if (!!value) {
-                if (opt.type == "str")
-                    text += "\n    " + opt.name + ": \"" + value + "\"";
-                else
-                    text += "\n    " + opt.name + ": " + value;
+        var text = "//Appearance\nAccountsTemplates.configure({";
+        _.each(behaviourOpts, function(opt){
+            var obj = opt.obj;
+            var value = AccountsTemplates[obj][opt.name];
+            if (opt.type == "boolean") {
+                text += "\n    " + opt.name + ": " + value;
+            }
+            else {
+                if (!!value) {
+                    if (opt.type == "str")
+                        text += "\n    " + opt.name + ": \"" + value + "\"";
+                    else
+                        text += "\n    " + opt.name + ": " + value;
+                }
             }
         });
         text += "\n});";

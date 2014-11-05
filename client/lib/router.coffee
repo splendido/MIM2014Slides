@@ -32,8 +32,10 @@ if Meteor.isClient
     famous.core.Engine.on 'keydown', (keyEvt) ->
       switch keyEvt.which
         # SPACE and →: Go next slide
-        when 39, 32 then Router.setNext()
-        # SPACE and →: Go next slide
+        #when 39, 32 then Router.setNext()
+        # →: Go next slide
+        when 39 then Router.setNext()
+        # →: Go previou slide
         when 37 then Router.setPrev()
     #famous.core.Engine.on CLICK_EVT, -> Router.setNext()
 
