@@ -2,15 +2,55 @@ template(name='at1')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
       h2 UserAccounts
-    +Surface size='[900, undefined]' align='[.5, .5]' origin='[.5, .5]' target='content'
-      h1 What's that?!
-      .ui.left.aligned.bulleted.massive.list
-        .item A Meteor Organization
-        .item A GitHub Organization
-      h1 What can you get from it?
-      .ui.left.aligned.bulleted.massive.list
-        .item A suite of packages packages for Meteor JS
-        .item UI Templates to easily manage user login/registration/logout operations
-        .item fully configurable appearance and behaviour
+    +Surface proportions='[0.6, 0.4]' align='[.5, .25]' origin='[.5, .5]' target='content'
+      //
+        h1 What's that?!
+        .ui.segment
+          .ui.left.aligned.bulleted.massive.list
+            .item A Meteor Organization
+            .item A GitHub Organization
+      .ui.piled.feed.segment
+        h2.ui.header
+          | What's that?!
+        .event
+          .label
+            img.tiny.circular.ui.image(src="/icons/meteor_neg.png")
+          .content
+            .summary
+              | A Meteor Organization
+        .event
+          .label
+            i.huge.github.alternate.icon
+          .content
+            .summary
+              | A GitHub Organization
+    +Surface proportions='[0.6, 0.4]' align='[.5, .7]' origin='[.5, .5]' target='content'
+      //
+        h1 What can you get from it?
+        .ui.left.aligned.bulleted.massive.list
+          .item A suite of packages packages for Meteor JS
+          .item UI Templates to easily manage user login/registration/logout operations
+          .item fully configurable appearance and behaviour
+      .ui.piled.feed.segment
+        h2.ui.header
+          | What can you get from it?
+        .event
+          .label
+            i.circular.gift.icon
+          .content
+            .summary
+              | A suite of packages for Meteor JS
+        .event
+          .label
+            i.circular.magic.icon
+          .content
+            .summary
+              | UI Templates to easily manage user login/registration/logout operations
+        .event
+          .label
+            i.circular.photo.icon
+          .content
+            .summary
+              | Fully configurable appearance and behaviour
     +Surface size='[undefined, 50]' target='footer'
       p @splendido
