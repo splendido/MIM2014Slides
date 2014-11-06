@@ -2,20 +2,25 @@ template(name='end')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
       h2 Meteor Day - MIM 2014
-    +Surface proportions='[1.0, .01]' align='[.5, .15]' origin='[.5, .5]' target='content'
-      h1 Thank you for your time.
-        br
-        | Any questions?
-      p Packages info available from here:
-        br
-        a(href='https://atmospherejs.com/?q=useraccounts') https://atmospherejs.com/?q=useraccounts
-      p Slides available at:
-        br
-        a(href='https://github.com/splendido/MIM2014Slides') github.com/splendido/MIM2014Slides
+    +Surface proportions='[0.9, .5]' align='[.5, .0]' origin='[.5, .0]' target='content'
+      h1 Thank you for your time!
+      h1.ui.icon.header
+        i.circular.question.icon
+        | Questions?
+        .sub.header
+          | Have any further questions? Contact Me!
+      .ui.two.column.center.aligned.relaxed.grid
+        .column
+          p Packages info available from here:
+            br
+            a(href='https://atmospherejs.com/?q=useraccounts') https://atmospherejs.com/?q=useraccounts
+        .column
+          p Slides available at:
+            br
+            a(href='https://github.com/splendido/MIM2014Slides') github.com/splendido/MIM2014Slides
     +Surface proportions='[1.0, .01]' align='[.5, .7]' origin='[.5, .5]' target='content'
       h2 Slides based on the marvellous work by @PEM--
-        br
-        img.gravatar(src='/gravatar.png')
+      img.gravatar(src='/gravatar.png')
       p Original Slides are available here:
         br
         a(href='https://github.com/PEM--/MeetupFamousSlides') github.com/PEM--/MeetupFamousSlides
