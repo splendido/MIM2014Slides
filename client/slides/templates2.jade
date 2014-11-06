@@ -1,0 +1,72 @@
+template(name='templates2')
+  +HeaderFooterLayout size='[undefined, undefined]'
+    +Surface size='[undefined, 100]' target='header'
+      h2 UserAccounts - Frameworks
+    +Surface proportions='[0.45, 0.9]' align='[.02, .0]' origin='[.0, .0]' target='content'
+      .small-code
+        +prism language='spacebars'
+          | &lt;template name="atForm">
+          |   {{dstache}}#unless hide}}
+          |     &lt;div class="at-form ui fluid center aligned basic fitted segment">
+          |       {{dstache}}#if showTitle}}
+          |         {{dstache}}> atTitle}}
+          |       {{dstache}}/if}}
+          |       {{dstache}}#if showOauthServices}}
+          |         {{dstache}}> atOauth}}
+          |       {{dstache}}/if}}
+          |       {{dstache}}#if showServicesSeparator}}
+          |         {{dstache}}> atSep}}
+          |       {{dstache}}/if}}
+          |       {{dstache}}#if showError}}
+          |         {{dstache}}> atError}}
+          |       {{dstache}}/if}}
+          |       {{dstache}}#if showResult}}
+          |         {{dstache}}> atResult}}
+          |       {{dstache}}/if}}
+          |       {{dstache}}#if showPwdForm}}
+          |         {{dstache}}> atPwdForm}}
+          |       {{dstache}}/if}}
+          |       {{dstache}}#if showSignInLink}}
+          |         {{dstache}}> atSigninLink}}
+          |       {{dstache}}/if}}
+          |       {{dstache}}#if showSignUpLink}}
+          |         {{dstache}}> atSignupLink}}
+          |       {{dstache}}/if}}
+          |       {{dstache}}#if showTermsLink}}
+          |         {{dstache}}> atTermsLink}}
+          |       {{dstache}}/if}}
+          |     &lt;/div>
+          |   {{dstache}}/unless}}
+          | &lt;/template>
+    +Surface proportions='[0.45, 0.9]' align='[.52, .0]' origin='[.0, .0]' target='content'
+      .ui.piled.feed.segment
+        h2.ui.header
+          | ...actually it's many more &nbsp;&nbsp;&nbsp;
+          i.meh.icon
+        .event
+          .label
+            i.circular.pencil.icon
+          .content
+            .summary
+              | each part of the form is defined by separate sub-templates
+        .event
+          .label
+            i.circular.thumbs.up.outline.icon
+          .content
+            .summary
+              | each sub-template is shown only when appropriate
+        .event
+          .label
+            i.circular.magic.icon
+          .content
+            .summary
+              | useraccounts:famous-wrapper simply wraps each sub-template into a Surface to be animated!
+    +Surface proportions='[0.45, 0.9]' align='[.52, .5]' origin='[.0, .0]' target='content'
+      h1.left
+        | but this is only internal stuff...
+        br
+        | ...you don't have to care about
+        br
+        i.large.smile.icon
+    +Surface size='[undefined, 50]' target='footer'
+      p @splendido
