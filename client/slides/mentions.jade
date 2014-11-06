@@ -1,0 +1,53 @@
+template(name='mentions')
+  +HeaderFooterLayout size='[undefined, undefined]'
+    +Surface size='[undefined, 100]' target='header'
+      h2 UserAccounts - Mentions
+    +Surface proportions='[0.9, .9]' align='[.5, .45]' origin='[.5, .5]' target='content'
+      h1 People who agreed to join the team:
+      .ui.center.aligned.two.column.relaxed.grid
+        .column
+          .item
+            img.gravatar_mentions(src='https://avatars.githubusercontent.com/u/2431923?v=2')
+            .content
+              .header
+                | Kevin O'Hagan
+              | aka
+              a(href='https://github.com/kevohagan') @kevohagan
+        .column
+          .item
+            img.gravatar_mentions(src='https://avatars3.githubusercontent.com/u/2768891?v=2')
+            .content
+              .header
+                | Stefan Undorf
+              | aka
+              a(href='https://github.com/softwarerero') @softwarerero
+      h1 Pioneers and Mentors behind bleeding edge packages
+      .ui.center.aligned.three.column.relaxed.grid
+        .column
+          .item
+            img.gravatar_mentions(src='https://avatars2.githubusercontent.com/u/1136718?v=2&s=460')
+            .content
+              .header
+                | Morten N.O. Nørgaard Henriksen
+              | aka
+              a(href='https://github.com/raix') @raix
+        .column
+          .item
+            img.gravatar_mentions(src='https://avatars1.githubusercontent.com/u/381978?v=2&s=460')
+            .content
+              .header
+                | Gadi Cohen
+              | aka
+              a(href='https://github.com/gadicc') @gadicc
+        .column
+          .item
+            img.gravatar_mentions(src='https://avatars0.githubusercontent.com/u/106?v=2&s=460')
+            .content
+              .header
+                | Josh Owens
+              | aka
+              a(href='https://github.com/queso') @queso
+
+    +Surface size='[undefined, 70]' target='footer'
+      p @splendido
+

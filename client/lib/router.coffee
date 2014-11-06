@@ -10,7 +10,7 @@
   {layt: 'layout',  tpl: 'appearance', section: 3, path: '/appearance'},
   {layt: 'layout',  tpl: 'behaviour',  section: 3, path: '/behaviour'},
   {layt: 'layout',  tpl: 'texts',      section: 3, path: '/texts'},
-  {layt: 'layout',  tpl: 'thanks',     section: 4, path: '/thanks'},
+  {layt: 'layout',  tpl: 'mentions',   section: 4, path: '/mentions'},
   {layt: 'layout',  tpl: 'contribs',   section: 4, path: '/contribs'},
   {layt: 'layout',  tpl: 'end',        section: 1, path: '/end'},
 ]
@@ -29,7 +29,7 @@ _.each(_.rest(SLIDES), function(slide){
 
 if Meteor.isClient
   # Remove debug logging in Famous-Views
-  Logger.setLevel 'famous-views', 'error'
+  Logger.setLevel 'famous-views', 'info'
 
   Meteor.startup ->
     # Events handling for going from one slide to the other.

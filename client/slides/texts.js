@@ -42,7 +42,7 @@ var info = [
 
 
 Template.texts.helpers({
-    textsOpts: function(){
+    options: function(){
         return textsOpts;
     },
     templateName: function(){

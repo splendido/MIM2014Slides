@@ -17,6 +17,8 @@ Template.atTextOpt.events({
     "change input": function(e, t){
         var obj = t.data.obj;
         var value = t.$('input').val();
+        if (t.data.type === "number")
+            value = parseInt(value);
         AccountsTemplates[obj][t.data.name] = value;
         if (t.data.reinit)
             reinitAT();

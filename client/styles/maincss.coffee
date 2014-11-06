@@ -59,6 +59,11 @@ css.add '.gravatar_small',
   border: "1px solid #{@theme.primary}"
   width: CSSC.p 50
 
+css.add '.gravatar_mentions',
+  borderRadius: CSSC.p 5
+  border: "1px solid #{@theme.primary}"
+  width: CSSC.p 20
+
 # Background and generic values
 css.add 'html',
   backgroundImage: "radial-gradient(ellipse at center, \
@@ -133,11 +138,12 @@ css.add '.segment.atOpt',
   padding: 0
 
 css.add '.segment.atOpt .field',
-  "margin-bottom": '5px'
+  marginBottom: '5px'
 
 css.add '.segment.atOpt label',
-  "min-width": '100px'
+  minWidth: '100px'
+  color: "black"
 
 css.add '.segment.atState .button',
   fontSize: '.8em'
-  "min-width": '200px'
+  minWidth: '200px'

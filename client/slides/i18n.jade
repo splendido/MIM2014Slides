@@ -14,6 +14,8 @@ template(name='i18n')
               .summary
                 | thanks to the package
                 a(href="https://atmospherejs.com/softwarerero/accounts-t9n") accounts-t9n
+                | by
+                a(href="https://github.com/softwarerero") @softwarerero
           .event
             .label
               i.unmute.icon
@@ -28,17 +30,8 @@ template(name='i18n')
             .content
               .summary
                 | ...all reactively selectable!
-      +Surface proportions='[0.9, 0.2]' align='[.05, .9]' origin='[.0, .0]'
-        .five.fluid.ui.buttons
-          .ui.button One
-          .or
-          .ui.button Two
-          .or
-          .ui.button Three
-          .or
-          .ui.button Four
-          .or
-          .ui.button Five
+      +Surface proportions='[0.9, 0.2]' align='[.05, .75]' origin='[.0, .0]'
+        +i18nbuttons
     +Surface proportions='[0.25, 0.95]' align='[.70, .05]' origin='[.0, .0]' class="atDisplay" target='content'
       #atFormDiv
         +atForm
@@ -46,3 +39,8 @@ template(name='i18n')
       +atState
     +Surface size='[undefined, 50]' target='footer'
       p @splendido
+
+template(name="i18nbuttons")
+  .five.fluid.ui.buttons
+    each languages
+      .ui.button(class="{{active}}") {{lang}}
