@@ -2,29 +2,29 @@ template(name='at2')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
       h2 UserAccounts - UserAccounts
-    +Surface proportions='[0.6, 0.4]' align='[.5, .25]' origin='[.5, .5]' target='content'
+    +Surface proportions='[0.7, 0.4]' align='[.5, .3]' origin='[.5, .5]' target='content'
       //
         h1 Why?!
         .ui.left.aligned.bulleted.massive.list
           .item ...the logic behind the templates never changes
           .item ...different front-end framework could be used for different applications
       .ui.piled.feed.segment
-        h2.ui.header
-          | Why?!
+        h1.ui.header
+          | Rationale
         .event
           .label
-            i.huge.lightbulb.icon
+            i.circular.lightbulb.icon
           .content
             .summary
-              | ...the logic behind the templates never changes
+              | the logic behind the templates is always the same...
         .event
           .label
-            i.huge.dashboard.icon
+            i.circular.dashboard.icon
           .content
             .summary
-              | ...different front-end framework could be used for different applications
-
-    +Surface proportions='[0.6, 0.4]' align='[.5, .65]' origin='[.5, .5]' target='content'
-      h1 Why the logic should be rewritten everytime some html need be?!?!
+              | ...but different front-end framework could be used for different applications
+    +Surface proportions='[0.75, 0.4]' align='[.5, .8]' origin='[.5, .5]' target='content'
+      h1.ui.red.header
+        | Why the logic should be rewritten when only the HTML is different?!?!
     +Surface size='[undefined, 50]' target='footer'
       p @splendido

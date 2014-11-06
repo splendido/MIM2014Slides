@@ -77,11 +77,9 @@ css.add '.bgRed',
   backgroundColor: @theme.bgRed
 
 css.add '.bgLightGray',
-  #"background-color": '#999999'
   "background-color": @theme.bg1
 
 css.add '.bgDarkGray',
-  #"background-color": '#333333'
   "background-color": @theme.bg2
 
 # atForm window
@@ -101,6 +99,12 @@ css.add 'h2',
   fontFamily: 'lane'
 
 # Texts
+css.add '.ui.feed h1.header',
+  fontSize: '2.8em'
+
+css.add '.ui.feed .content',
+  fontSize: '1.4em'
+
 css.add 'p',
   fontSize: '1.2em'
 
@@ -147,3 +151,6 @@ css.add '.segment.atOpt label',
 css.add '.segment.atState .button',
   fontSize: '.8em'
   minWidth: '200px'
+
+css.add '.ui.red.header',
+  fontSize: '2.8em'

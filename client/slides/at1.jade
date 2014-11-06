@@ -2,7 +2,7 @@ template(name='at1')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
       h2 UserAccounts
-    +Surface proportions='[0.6, 0.4]' align='[.5, .25]' origin='[.5, .5]' target='content'
+    +Surface proportions='[0.7, 0.4]' align='[.5, .23]' origin='[.5, .5]' target='content'
       //
         h1 What's that?!
         .ui.segment
@@ -10,21 +10,26 @@ template(name='at1')
             .item A Meteor Organization
             .item A GitHub Organization
       .ui.piled.feed.segment
-        h2.ui.header
+        h1.ui.header
           | What's that?!
-        .event
-          .label
-            img.tiny.circular.ui.image(src="/icons/meteor_neg.png")
-          .content
-            .summary
-              | A Meteor Organization
-        .event
-          .label
-            i.huge.github.alternate.icon
-          .content
-            .summary
-              | A GitHub Organization
-    +Surface proportions='[0.6, 0.4]' align='[.5, .7]' origin='[.5, .5]' target='content'
+        .ui.center.aligned.two.column.grid
+          .column
+            .ui.feed.basic.segment  
+              .event
+                .label
+                  img.small.circular.ui.image(src="/icons/meteor_neg.png")
+                .content
+                  .summary
+                    | A Meteor Organization
+          .column
+            .ui.feed.basic.segment  
+              .event
+                .label
+                  i.circular.github.alternate.icon
+                .content
+                  .summary
+                    | A GitHub Organization
+    +Surface proportions='[0.7, 0.4]' align='[.5, .68]' origin='[.5, .5]' target='content'
       //
         h1 What can you get from it?
         .ui.left.aligned.bulleted.massive.list
@@ -32,7 +37,7 @@ template(name='at1')
           .item UI Templates to easily manage user login/registration/logout operations
           .item fully configurable appearance and behaviour
       .ui.piled.feed.segment
-        h2.ui.header
+        h1.ui.header
           | What can you get from it?
         .event
           .label
