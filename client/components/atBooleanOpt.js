@@ -1,6 +1,6 @@
 Template.atBooleanOpt.created = function(){
-    var obj = this.data.obj;
-    var checked = AccountsTemplates[obj][this.data.name];
+    var optObj = getOptObj(this.data.obj);
+    var checked = optObj[this.data.name];
     this.checked = new ReactiveVar(checked ? true : false);
 };
 
@@ -13,11 +13,11 @@ Template.atBooleanOpt.helpers({
 
 Template.atBooleanOpt.events({
     "click ": function(e, t){
-        var obj = t.data.obj;
+        var optObj = getOptObj(t.data.obj);
         var code = t.data.code;
         var checked = !t.checked.get();
         t.checked.set(checked);
-        AccountsTemplates[obj][t.data.name] = checked;
+        optObj[t.data.name] = checked;
         if (t.data.reinit)
             reinitAT();
     },

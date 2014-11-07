@@ -28,10 +28,17 @@ reinitAT = function(){
         })
         .value();
     AccountsTemplates._fields = fields;
-    var state = AccountsTemplates.getState()
+    var state = AccountsTemplates.getState();
     // Actual re-initialization...
     AccountsTemplates.init();
     $('div.at-form').remove();
     Blaze.render(Template.atForm, $('#atFormDiv').get(0));
     AccountsTemplates.setState(state);
 };
+
+getOptObj = function(obj){
+    obj= obj.split(".");
+    return _.reduce(obj, function(memo, o){
+        return memo[o];
+    }, AccountsTemplates);
+}

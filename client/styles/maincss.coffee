@@ -136,6 +136,7 @@ css.add 'pre[class*="language-"]',
   fontFamily: 'sourceCode'
   fontSize: '.8em'
   lineHeight: '.85em'
+  maxHeight: '550px'
 
 # Miscellaneous
 css.add '.segment.atOpt',
@@ -152,6 +153,9 @@ css.add '.segment.atOpt .field',
 css.add '.segment.atOpt label',
   minWidth: '100px'
   color: "rgba(0, 0, 0, 0.7)!important"
+
+css.add '.grid.options label',
+  minWidth: '130px'
 
 css.add '.segment.atState .button',
   fontSize: '.8em'

@@ -27,9 +27,9 @@ Template.behaviour.helpers({
             else {
                 if (!!value) {
                     if (opt.type == "str")
-                        text += "\n    " + opt.name + ": \"" + value + "\"";
+                        text += "\n    " + opt.name + ": \"" + value + "\",";
                     else
-                        text += "\n    " + opt.name + ": " + value;
+                        text += "\n    " + opt.name + ": " + value + ",";
                 }
             }
         });
