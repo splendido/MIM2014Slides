@@ -1,10 +1,18 @@
 template(name='mentions')
   +HeaderFooterLayout size='[undefined, undefined]'
-    +Surface size='[undefined, 100]' target='header'
+    +Surface size='[undefined, 80]' target='header'
       h2 UserAccounts - Mentions
-    +Surface proportions='[0.7, .3]' align='[.5, .25]' origin='[.5, .5]' target='content'
+    +Surface proportions='[.9, .3]' align='[.5, .25]' origin='[.5, .5]' target='content'
       h1 People who agreed to join the team:
-      .ui.center.aligned.two.column.relaxed.grid
+      .ui.center.aligned.three.column.grid
+        .column
+          .item
+            img.gravatar_mentions(src='https://avatars0.githubusercontent.com/u/106?v=2&s=460')
+            .content
+              .header
+                | Josh Owens
+              | aka
+              a(href='https://github.com/queso') @queso
         .column
           .item
             img.gravatar_mentions(src='https://avatars.githubusercontent.com/u/2431923?v=2')
@@ -23,10 +31,10 @@ template(name='mentions')
               a(href='https://github.com/softwarerero') @softwarerero
     +Surface proportions='[0.9, .3]' align='[.5, .7]' origin='[.5, .5]' target='content'
       h1 Pioneers and Mentors behind bleeding edge packages
-      .ui.center.aligned.three.column.relaxed.grid
+      .ui.center.aligned.two.column.relaxed.grid
         .column
           .item
-            img.gravatar_mentions(src='https://avatars2.githubusercontent.com/u/1136718?v=2&s=460')
+            img.gravatar_mentors(src='https://avatars2.githubusercontent.com/u/1136718?v=2&s=460')
             .content
               .header
                 | Morten N.O. Nørgaard Henriksen
@@ -34,21 +42,12 @@ template(name='mentions')
               a(href='https://github.com/raix') @raix
         .column
           .item
-            img.gravatar_mentions(src='https://avatars1.githubusercontent.com/u/381978?v=2&s=460')
+            img.gravatar_mentors(src='https://avatars1.githubusercontent.com/u/381978?v=2&s=460')
             .content
               .header
                 | Gadi Cohen
               | aka
               a(href='https://github.com/gadicc') @gadicc
-        .column
-          .item
-            img.gravatar_mentions(src='https://avatars0.githubusercontent.com/u/106?v=2&s=460')
-            .content
-              .header
-                | Josh Owens
-              | aka
-              a(href='https://github.com/queso') @queso
 
-    +Surface size='[undefined, 70]' target='footer'
+    +Surface size='[undefined, 50]' target='footer'
       p @splendido
-

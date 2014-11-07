@@ -62,7 +62,12 @@ css.add '.gravatar_small',
 css.add '.gravatar_mentions',
   borderRadius: CSSC.p 5
   border: "1px solid #{@theme.primary}"
-  width: CSSC.p 20
+  width: CSSC.p 45
+
+css.add '.gravatar_mentors',
+  borderRadius: CSSC.p 5
+  border: "1px solid #{@theme.primary}"
+  width: CSSC.p 25
 
 # Background and generic values
 css.add 'html',
@@ -99,10 +104,10 @@ css.add 'h2',
   fontFamily: 'lane'
 
 # Texts
-css.add '.ui.feed h1.header',
+css.add '.ui.segment h1.header',
   fontSize: '2.8em'
 
-css.add '.ui.feed .content',
+css.add '.ui.segment .content',
   fontSize: '1.4em'
 
 css.add 'p',
@@ -146,7 +151,7 @@ css.add '.segment.atOpt .field',
 
 css.add '.segment.atOpt label',
   minWidth: '100px'
-  color: "black"
+  color: "rgba(0, 0, 0, 0.7)!important"
 
 css.add '.segment.atState .button',
   fontSize: '.8em'
@@ -154,3 +159,9 @@ css.add '.segment.atState .button',
 
 css.add '.ui.red.header',
   fontSize: '2.8em'
+
+css.add '.ui.segment.atOptions .column',
+  marginBottom: 0
+
+#css.add '.ui.segment.atOptions',
+#  backgroundColor: @theme.bg2
