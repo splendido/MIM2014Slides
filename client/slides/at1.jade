@@ -1,14 +1,8 @@
 template(name='at1')
   +HeaderFooterLayout size='[undefined, undefined]'
-    +Surface size='[undefined, 100]' target='header'
+    +Surface size='[undefined, 80]' target='header'
       h2 UserAccounts
     +Surface proportions='[0.7, 0.4]' align='[.5, .23]' origin='[.5, .5]' target='content'
-      //
-        h1 What's that?!
-        .ui.segment
-          .ui.left.aligned.bulleted.massive.list
-            .item A Meteor Organization
-            .item A GitHub Organization
       .ui.piled.feed.segment
         h1.ui.header
           | What's that?!
@@ -30,12 +24,6 @@ template(name='at1')
                   .summary
                     | A GitHub Organization
     +Surface proportions='[0.7, 0.4]' align='[.5, .68]' origin='[.5, .5]' target='content'
-      //
-        h1 What can you get from it?
-        .ui.left.aligned.bulleted.massive.list
-          .item A suite of packages packages for Meteor JS
-          .item UI Templates to easily manage user login/registration/logout operations
-          .item fully configurable appearance and behaviour
       .ui.piled.feed.segment
         h1.ui.header
           | What can you get from it?

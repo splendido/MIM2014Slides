@@ -2,7 +2,7 @@
 var languages = [
     {_id: "en", lang: "English"},
     {_id: "it", lang: "Italian"},
-    {_id: "vi", lang: "Vietnamese"},
+    {_id: "ru", lang: "Russian"},
     {_id: "ar", lang: "Arabic"},
     {_id: "es", lang: "Spanish"},
 ];

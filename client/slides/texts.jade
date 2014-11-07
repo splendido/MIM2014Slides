@@ -2,10 +2,21 @@ template(name='texts')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 80]' target='header'
       h2 UserAccounts - Configuration
-    +View proportions='[0.6, 0.6]' align='[.05, .35]' origin='[.0, .5]' target='content'
+    +View proportions='[0.6, 0.6]' align='[.04, .35]' origin='[.0, .5]' target='content'
       +Surface proportions='[1.0, 0.4]'
-        h1 Texts
-        .ui.left.aligned.secondary.inverted.segment
+        .ui.piled.segment.atOptions
+          h1.ui.header
+            | Texts
+          .ui.basic.accordion
+            .title
+              i.dropdown.icon
+              | Title
+            .content
+              p A dog is a type of domesticated animal
+
+
+
+
           .ui.two.column.grid
             each options
               .column
@@ -13,10 +24,10 @@ template(name='texts')
       +Surface proportions='[1.0, 0.35]' align='[.0, .9]' origin='[.0, .0]'
         +prism language='javascript' class='line-numbers'
           | {{confCode}}
-    +Surface proportions='[0.25, 0.95]' align='[.70, .05]' origin='[.0, .0]' class="atDisplay" target='content'
+    +Surface proportions='[0.3, 0.95]' align='[.68, .05]' origin='[.0, .0]' class="atDisplay" target='content'
       #atFormDiv
         +atForm
-    +Surface proportions='[0.25, 0.10]' align='[.70, .05]' origin='[.0, .5]' translate='[0,0,1]' target='content'
+    +Surface proportions='[0.3, 0.10]' align='[.68, .05]' origin='[.0, .5]' translate='[0,0,1]' target='content'
       +atState
     +Surface size='[undefined, 50]' target='footer'
       p @splendido

@@ -1,6 +1,6 @@
 template(name='contribs')
   +HeaderFooterLayout size='[undefined, undefined]'
-    +Surface size='[undefined, 100]' target='header'
+    +Surface size='[undefined, 80]' target='header'
       h2 UseAccounts
     +Surface proportions='[0.75, .9]' align='[.5, .45]' origin='[.5, .5]' target='content'
       h1 A Big Thank You to all contributors:
@@ -16,27 +16,5 @@ template(name='contribs')
                     .content
                       .header
                         a(href='{{html_url}}') {{login}}
-      //
-        .ui.left.aligned.segment
-          .ui.small.celled.list
-            each contributors
-              .item
-                img.gravatar_small(src='{{avatar_url}}')
-                .content
-                  .header {{login}}
-                  a(href='{{url}}') {{url}}
-      //
-        .ui.items
-          each contributors
-            .item
-              .image
-                img.gravatar(src='{{avatar_url}}')
-              .content
-                .name
-                  {{login}}
-                a(href='{{url}}') {{url}}
-                .extra
-                  {{contributions}} contributions
-    +Surface size='[undefined, 70]' target='footer'
+    +Surface size='[undefined, 50]' target='footer'
       p @splendido
-
