@@ -2,12 +2,12 @@ template(name='templates2')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 80]' target='header'
       h2 UserAccounts - Frameworks
-    +Surface proportions='[0.45, 0.9]' align='[.02, .0]' origin='[.0, .0]' target='content'
+    +Surface proportions='[0.35, 0.9]' align='[.02, .0]' origin='[.0, .0]' target='content'
       .small-code
         +prism language='spacebars'
           | &lt;template name="atForm">
           |   {{dstache}}#unless hide}}
-          |     &lt;div class="at-form ui fluid center aligned basic fitted segment">
+          |     &lt;div class="at-form">
           |       {{dstache}}#if showTitle}}
           |         {{dstache}}> atTitle}}
           |       {{dstache}}/if}}
@@ -38,7 +38,7 @@ template(name='templates2')
           |     &lt;/div>
           |   {{dstache}}/unless}}
           | &lt;/template>
-    +Surface proportions='[0.45, 0.9]' align='[.5, .1]' origin='[.0, .0]' target='content'
+    +Surface proportions='[0.5, 0.9]' align='[.44, .1]' origin='[.0, .0]' target='content'
       .ui.piled.feed.segment
         h1.ui.header
           | ...actually it's many more!
@@ -60,8 +60,8 @@ template(name='templates2')
           .content
             .summary
               | useraccounts:famous-wrapper simply wraps each sub-template into an animated Surface!
-    +Surface proportions='[0.8, 0.9]' align='[.1, .85]' origin='[.0, .0]' target='content'
+    +Surface proportions='[0.95, 0.9]' align='[.02, .9]' origin='[.0, .0]' target='content'
       h1.ui.red.header
         | ...but this is internal stuff you don't have to care about!
-    +Surface size='[undefined, 50]' target='footer'
+    +Surface size='[undefined, 40]' target='footer'
       p @splendido

@@ -2,7 +2,7 @@ template(name='behaviour')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 80]' target='header'
       h2 UserAccounts - Configuration
-    +View proportions='[0.6, 0.6]' align='[.04, .45]' origin='[.0, .5]' target='content'
+    +View proportions='[0.6, 0.6]' align='[.02, .45]' origin='[.0, .5]' target='content'
       +Surface proportions='[1.0, 0.4]'
         .ui.piled.segment.atOptions
           h1.ui.header
@@ -14,10 +14,10 @@ template(name='behaviour')
       +Surface proportions='[1.0, 0.35]' align='[.0, .9]' origin='[.0, .0]'
         +prism language='javascript' class='line-numbers small'
           | {{confCode}}
-    +Surface proportions='[0.3, 0.95]' align='[.68, .05]' origin='[.0, .0]' class="atDisplay" target='content'
+    +Surface proportions='[0.36, 1.0]' align='[.63, .02]' origin='[.0, .0]' class="atDisplay" target='content'
       #atFormDiv
         +atForm
-    +Surface proportions='[0.3, 0.10]' align='[.68, .05]' origin='[.0, .5]' translate='[0,0,1]' target='content'
+    +Surface proportions='[0.36, 0.10]' align='[.63, .02]' origin='[.0, .5]' translate='[0,0,1]' target='content'
       +atState
-    +Surface size='[undefined, 50]' target='footer'
+    +Surface size='[undefined, 40]' target='footer'
       p @splendido

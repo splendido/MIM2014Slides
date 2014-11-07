@@ -1,0 +1,15 @@
+template(name='components')
+  +HeaderFooterLayout size='[undefined, undefined]'
+    +Surface size='[undefined, 100]' target='header'
+      h2 Meteor Day - MIM 2014
+    +Surface proportions='[1.0, .1]' align='[.5, .2]' origin='[.5, .5]' target='content'
+      h1.section Components
+    +Surface proportions='[.5, 0.35]' align='[.5, .35]' origin='[.5, .0]' target='content'
+      +prism language='bash'
+        | $ meteor add accounts-password
+        | $ meteor add accounts-google
+        | $ meteor add useraccounts:bootstrap
+    +Surface proportions='[1.0, .01]' align='[.5, .8]' origin='[.5, .5]' target='content'
+      h2 Torino - November 6, 2014
+    +Surface size='[undefined, 70]' target='footer'
+      p @splendido: Luca Mussi
