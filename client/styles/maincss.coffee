@@ -132,11 +132,21 @@ css.add 'code',
   fontSize: '.9em'
 
 # Codes
-css.add 'pre[class*="language-"]',
+css.add 'pre[class*="language-"].big',
   fontFamily: 'sourceCode'
   fontSize: '.8em'
   lineHeight: '.85em'
   maxHeight: '550px'
+  minHeight: '550px'
+
+css.add 'pre[class*="language-"].small',
+  fontFamily: 'sourceCode'
+  fontSize: '.8em'
+  lineHeight: '.85em'
+  maxHeight: '180px'
+  minHeight: '180px'
+
+css.add 'prism.big',
 
 # Miscellaneous
 css.add '.segment.atOpt',

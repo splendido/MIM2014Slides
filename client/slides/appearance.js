@@ -22,12 +22,12 @@ Template.appearance.helpers({
             var obj = opt.obj;
             var value = AccountsTemplates[obj][opt.name];
             if (opt.type == "boolean") {
-                text += "\n    " + opt.name + ": " + value;
+                text += "\n    " + opt.name + ": " + value + ",";
             }
             else {
                 if (!!value) {
                     if (opt.type == "str")
-                        text += "\n    " + opt.name + ": \"" + value + "\",";
+                        text += "\n    " + opt.name + ": '" + value + "',";
                     else
                         text += "\n    " + opt.name + ": " + value + ",";
                 }

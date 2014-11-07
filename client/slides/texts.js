@@ -106,9 +106,9 @@ var groups = [
 Template.texts.helpers({
     confCode: function(){
         var text = "//Texts\nAccountsTemplates.configure({";
-        _.each(order_of_objs, function(o_group){        
+        _.each(order_of_objs, function(o_group){
             text += "\n    " + o_group.comm;
-            var subObj = o_group.obj.split(".")[1]
+            var subObj = o_group.obj.split(".")[1];
             if (subObj)
                 text += "\n    " + subObj + ": {";
             _.each(groups, function(group){
@@ -118,16 +118,16 @@ Template.texts.helpers({
                     var optObj = getOptObj(opt.obj);
                     var value = optObj[opt.name];
                     if (!!value) {
-                        text += "\n"
+                        text += "\n";
                         if (subObj)
                             text += "    ";
                         if (opt.type == "str")
-                            text += "    " + opt.name + ": \"" + value + "\",";
+                            text += "    " + opt.name + ": '" + value + "',";
                         else
                             text += "    " + opt.name + ": " + value + ",";
                     }
                 });
-            })
+            });
             if (subObj)
                 text += "\n    },";
         });
@@ -158,7 +158,7 @@ Template.textsButtons.events({
 
 Template.textsOptions.helpers({
     options: function(){
-        var name = Session.get('optGroup')
+        var name = Session.get('optGroup');
         var group = _.filter(groups, function(grp){
             return grp.name === name;
         });
@@ -175,12 +175,10 @@ Template.textsOptions.helpers({
 
 Template.textsOptions.events({
     "click .accordion.opt1 > .title": function(e, t){
-        console.log("click 1");
         $('.ui.accordion.opt1').accordion("open", 0);
     },
     "click .accordion.opt2 > .title": function(e, t){
-        console.log("click 2");
         var index = t.data._id;
         $('.ui.accordion.opt2').accordion("open", index);
     },
-})
+});

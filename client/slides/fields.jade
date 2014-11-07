@@ -2,16 +2,48 @@ template(name='fields')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 80]' target='header'
       h2 UserAccounts - Configuration
-    +View proportions='[0.6, 0.6]' align='[.05, .35]' origin='[.0, .5]' target='content'
-      +Surface proportions='[1.0, 0.4]'
-        h1 Fields
-      +Surface proportions='[1.0, 0.35]' align='[.0, .9]' origin='[.0, .0]'
-        +prism language='javascript' class='line-numbers'
+    +View proportions='[0.65, 1.0]' align='[.015, .05]' origin='[.0, .0]' target='content'
+      +Surface proportions='[1.0, 0.25]' translate='[0,0,1]'
+        +configureFields
+      +Surface proportions='[1.0, 0.8]' align='[.0, .25]' origin='[.0, .0]' translate='[0,0,-1]'
+        +prism language='javascript' class='line-numbers big'
           | {{confCode}}
-    +Surface proportions='[0.25, 0.95]' align='[.70, .05]' origin='[.0, .0]' class="atDisplay" target='content'
+    +Surface proportions='[0.3, 0.95]' align='[.68, .05]' origin='[.0, .0]' class="atDisplay" target='content'
       #atFormDiv
         +atForm
-    +Surface proportions='[0.25, 0.10]' align='[.70, .05]' origin='[.0, .5]' translate='[0,0,1]' target='content'
-        +atState
+    +Surface proportions='[0.3, 0.10]' align='[.68, .05]' origin='[.0, .5]' translate='[0,0,1]' target='content'
+      +atState
     +Surface size='[undefined, 50]' target='footer'
       p @splendido
+
+template(name="configureFields")
+  .ui.left.aligned.piled.segment.atOptions
+    h1.ui.center.aligned.header
+      | Fields
+    .ui.basic.fluid.accordion
+      .title
+        i.dropdown.icon
+        | Configure
+      .content
+        .ui.small.selection.celled.list
+          each fields
+            +field
+          .item
+            .content
+              .header
+                .ui.teal.icon.disabled.button.add
+                  i.add.icon
+template(name="field")
+  .item
+    .right.floated.ui.icon.buttons
+      .ui.teal.disabled.button.edit
+        i.edit.sign.icon
+      .ui.green.button.down
+        i.down.icon
+      .ui.green.button.up
+        i.up.icon
+      .ui.primary.button.remove(class="{{disabled}}")
+        i.remove.icon
+    i(class="{{iconName}} large icon")
+    .content
+      .header {{_id}}
