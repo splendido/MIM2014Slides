@@ -17,7 +17,7 @@ Template.behaviour.helpers({
         return "atTextOpt";
     },
     confCode: function(){
-        var text = "//Appearance\nAccountsTemplates.configure({";
+        var text = "//Behaviour\nAccountsTemplates.configure({";
         _.each(behaviourOpts, function(opt){
             var obj = opt.obj;
             var value = AccountsTemplates[obj][opt.name];

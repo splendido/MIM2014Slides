@@ -89,29 +89,29 @@ css.add '.bgDarkGray',
 
 # atForm window
 css.add '.atDisplay',
-  fontSize: '0.9em'
-  padding: "20px"
+  fontSize: '.8em'
+  padding: "5px"
   borderRadius: CSSC.p 2
-  border: "2px solid #{@theme.primary}"
+  border: "1px solid #{@theme.primary}"
 
 # Titles
 css.add 'h1',
-  fontSize: '3em'
+  fontSize: '2em'
   fontFamily: 'lane'
 
 css.add 'h2',
-  fontSize: '1.8em'
+  fontSize: '1.6em'
   fontFamily: 'lane'
 
 # Texts
 css.add '.ui.segment h1.header',
-  fontSize: '2.8em'
+  fontSize: '2.0em'
 
 css.add '.ui.segment .content',
-  fontSize: '1.4em'
+  fontSize: '1.2em'
 
 css.add 'p',
-  fontSize: '1.2em'
+  fontSize: '1.0em'
 
 css.add '.left',
   textAlign: 'left'
@@ -129,22 +129,20 @@ css.add 'a:hover',
 
 css.add 'code',
   fontFamily: 'sourceCode'
-  fontSize: '.9em'
+  fontSize: '.6em'
 
 # Codes
+css.add 'pre[class*="language-"]',
+  fontFamily: 'sourceCode'
+  fontSize: '1.1em'
+  lineHeight: '.6em'
+
 css.add 'pre[class*="language-"].big',
   fontFamily: 'sourceCode'
-  fontSize: '.8em'
-  lineHeight: '.85em'
-  maxHeight: '550px'
-  minHeight: '550px'
-
-css.add 'pre[class*="language-"].small',
-  fontFamily: 'sourceCode'
-  fontSize: '.8em'
-  lineHeight: '.85em'
-  maxHeight: '180px'
-  minHeight: '180px'
+  fontSize: '1.1em'
+  lineHeight: '.6em'
+  maxHeight: CSSC.p 100
+  minHeight: CSSC.p 100
 
 css.add 'prism.big',
 
@@ -158,7 +156,7 @@ css.add '.segment.atOpt',
   padding: 0
 
 css.add '.segment.atOpt .field',
-  marginBottom: '5px'
+  marginBottom: '3px'
 
 css.add '.segment.atOpt label',
   minWidth: '100px'
@@ -168,11 +166,14 @@ css.add '.grid.options label',
   minWidth: '130px'
 
 css.add '.segment.atState .button',
-  fontSize: '.8em'
+  fontSize: '.6em'
   minWidth: '200px'
 
 css.add '.ui.red.header',
-  fontSize: '2.8em'
+  fontSize: '2.6em'
+
+css.add 'h1.section',
+  fontSize: '3.6em'
 
 css.add '.ui.segment.atOptions .column',
   marginBottom: 0
