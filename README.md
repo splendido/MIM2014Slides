@@ -1,7 +1,7 @@
 ## Introduction
 Slides for [UserAccounts](https://github.com/meteor-useraccounts) presentation at the [Italian Meteor Day](http://www.meetup.com/Meteor-Italia/events/210707922/), the November 7th, 2014.
 
-![Slides](https://raw.githubusercontent.com/PEM--/MeetupFamousSlides/master/private/doc/slides.png)
+![Slides](https://raw.githubusercontent.com/splendido/MIM2014Slides/master/private/doc/slides.png)
 
 ## Online slides
 The slides are deployed on Meteor: http://meetupfamousslides.meteor.com
