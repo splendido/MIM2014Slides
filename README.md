@@ -4,7 +4,7 @@ Slides for [UserAccounts](https://github.com/meteor-useraccounts) presentation a
 ![Slides](https://raw.githubusercontent.com/splendido/MIM2014Slides/master/private/doc/slides.png)
 
 ## Online slides
-The slides are deployed on Meteor: http://meetupfamousslides.meteor.com
+The slides are deployed on Meteor: http://useraccounts-meteorday.meteor.com
 
 ## Original Slides
 This slides are based on the **marvellous** work by [PEM--](https://github.com/PEM--)
