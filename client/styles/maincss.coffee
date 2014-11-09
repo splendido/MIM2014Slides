@@ -141,15 +141,8 @@ css.add 'pre[class*="language-"].big',
   fontFamily: 'sourceCode'
   fontSize: '1.1em'
   lineHeight: '.6em'
-  maxHeight: '450px'
-  minHeight: '450px'
-
-css.add 'pre[class*="language-"].small',
-  fontFamily: 'sourceCode'
-  fontSize: '1.1em'
-  lineHeight: '.6em'
-  maxHeight: '150px'
-  minHeight: '150px'
+  maxHeight: CSSC.p 100
+  minHeight: CSSC.p 100
 
 css.add 'prism.big',
 

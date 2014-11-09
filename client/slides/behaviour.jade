@@ -2,8 +2,8 @@ template(name='behaviour')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 80]' target='header'
       h2 UserAccounts - Configuration
-    +View proportions='[0.6, 0.6]' align='[.02, .45]' origin='[.0, .5]' target='content'
-      +Surface proportions='[1.0, 0.4]'
+    +View proportions='[0.6, 1.0]' align='[.01, .01]' origin='[.0, .0]' target='content'
+      +Surface proportions='[1.0, 0.4]' align='[.01, .05]' origin='[.0, .0]'
         .ui.piled.segment.atOptions
           h1.ui.header
             | Behaviour
@@ -11,8 +11,8 @@ template(name='behaviour')
             each options
               .column
                 +UI.dynamic template=templateName
-      +Surface proportions='[1.0, 0.35]' align='[.0, .9]' origin='[.0, .0]'
-        +prism language='javascript' class='line-numbers small'
+      +Surface proportions='[1.0, 0.2]' align='[.0, 0.9]' origin='[.0, 1.0]' translate='[0,0,-1]'
+        +prism language='javascript' class='line-numbers big'
           | {{confCode}}
     +Surface proportions='[0.36, 1.0]' align='[.63, .02]' origin='[.0, .0]' class="atDisplay" target='content'
       #atFormDiv
